@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const target_currency = currency_two.value;
 
     try {
-      const response = await fetch(`http://localhost:3001/?base=${base_currency}&target=${target_currency}`);
+      const response = await fetch(`http://34.237.178.8:3000/?base=${base_currency}&target=${target_currency}`);
       const data = await response.json();
       console.log("Rate:", data.rate);
       rate = data.rate;

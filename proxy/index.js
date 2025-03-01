@@ -6,7 +6,6 @@ const app = express();
 
 const apiKey = process.env.API_KEY;
 const apiUrl = process.env.API_URL;
-const corsOrigin = process.env.CORS_ORIGIN;
 const port = process.env.PORT;
 
 app.use(cors());
@@ -36,5 +35,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server is running`);
 });
